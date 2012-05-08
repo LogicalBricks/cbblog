@@ -18,11 +18,11 @@ task :post do
   post_file = File.dirname(__FILE__) + "/_posts/#{post_title}.#{ext}"
   File.open(post_file, "w") do |f|
     f << <<-EOS.gsub(/^ /, '')
-                  ---
-                  layout: post
-                  title: #{title}
-                  ---
-                  EOS
+---
+layout: post
+title: #{title}
+---
+EOS
   end
   if (ENV['EDITOR'])
     system ("vim #{post_file}")
