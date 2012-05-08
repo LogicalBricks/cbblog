@@ -1,0 +1,13 @@
+---
+layout: default
+title: Blog de CBBFactura, tu factura fácil.
+site: 
+  author: LogicalBricks
+  host: http://cbbfactura.com/blog
+---
+
+{% assign hide_extended = true %}
+
+{% for post in site.posts limit:5 %}
+{% include post.html %}
+{% endfor %}
