@@ -132,7 +132,7 @@ h2.title{
 }
 
 ul.nav{
-	font: 17px Georgia, "Times New Roman", serif;
+	font: 20px Verdana, "Times New Roman", serif;
 	margin-top: 40px;
 	float: right;
 }
@@ -146,8 +146,14 @@ ul.nav a{
 	text-decoration: none;
 	color: #979797;
 	margin: 0 5px;
+	padding: 10px 10px 0 10px;
 }
 
 ul.nav a:hover{
-	color: #00ADEE;
+	color: #fff;
+	background-color: #696969;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: #E3D444;
 }
