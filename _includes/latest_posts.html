@@ -1,9 +1,9 @@
 <div class="panel">
-	<h4>Últimos artículos</h4>
+	<h4>Artículos recientes</h4>
 	<ul>
 		{% for post in site.posts limit: 5 %}
 		<li>
-			<a href="{{ post.url }}">{{ post.title}}</a>
+			<a href="{{ post.url }}">{{ post.title}} <em> {{ post.date | date:"%B %d, %Y" }} </em></a>
 		</li>
 		{% endfor %}
 	</ul>

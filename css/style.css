@@ -1,36 +1,37 @@
 body{
-/*	background: #f2f2f2 url('/image/absurdidad.png') repeat;*/
 	background: #f2f2f2 url('/image/blu_stripes.png') repeat;
-	font: 14px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font: 15px Georgia, "Times New Roman", serif;
 }
 
 #header{
-	margin: 0px;
-/*	background: #FAFAFA url('/image/wide_rectangles.png') repeat;*/
 	border-bottom: 10px solid #696969;
 	background-color: white;
-	height: 60px;
-	padding-top: 20px;
+	height: 65px;
 }
 
 div.logo{
+	position: absolute;
 	background: transparent url('/image/logo.png') no-repeat;
 	color: #424242;
 	text-indent: 114px;
-	width: 170px;
-	height: 50px;
+	width: 240px;
+	height: 120px;
 	font-size: 20px;
 	margin: 0 auto;
 	font-weight: bold;
+	z-index: 2px;
 }
 
-.container{
-	padding: 10px 40px 75px 40px;
+#container{
+	margin-top: 50px;
+	margin-bottom: 80px;
 }
 
 h2.title{
 	color: #00ADEE;
-	font-size: 1.5em;
+	font-size: 28px;
+	font-width: 500;
+	line-height: 33px;
 }
 
 .byline{
@@ -41,12 +42,17 @@ h2.title{
 	padding: 8px;
 }
 
+#sidebar, .entry{
+	margin: 20px 0 0 0;
+}
+
 .entry{
 	background-color: #FFF;
 	padding: 10px 15px;
-	margin-top: 20px;
 	box-shadow: 0px 4px 10px 2px #979797; /* Opera 10.5, IE 9.0 */
 	border: 1px dashed #c4c4c4;
+	font-size: 15px;
+	line-height: 24px;
 }
 
 .entry strong{
@@ -57,7 +63,15 @@ h2.title{
 	color: #9B9B9B;
 	text-align: justify;
 	margin-top: 20px;
-	font-size: 16px/26px;
+}
+
+.body a{
+	color: #5CD14D;
+}
+
+.body a:hover{
+	color: #00ADEE;
+	text-decoration: none;
 }
 
 #footer a{
@@ -76,4 +90,64 @@ h2.title{
 	text-decoration: inline;
 	color: white;
 	text-decoration: underline;
+}
+
+#sidebar{
+	padding: 10px;
+	background-color: white;
+	float: right;
+}
+
+#sidebar h4{
+	color: black;
+	font-style: italic;
+}
+
+#sidebar ul{
+	list-style-type: none;
+}
+
+#sidebar li{
+	border-bottom: 1px solid #E5E5E5;
+	margin: 0;
+}
+
+#sidebar a{
+	font-style: italic;
+	color: #999;
+	text-decoration: none;
+	display: block;
+}
+
+#sidebar a:hover{
+	color: #000;
+}
+
+#sidebar a:hover em{
+	color: #00ADEE;
+}
+
+#sidebar a em{
+	color: #5CD14D;
+}
+
+ul.nav{
+	font: 17px Georgia, "Times New Roman", serif;
+	margin-top: 40px;
+	float: right;
+}
+
+ul.nav li{
+	display: inline;
+	margin: 0;
+}
+
+ul.nav a{
+	text-decoration: none;
+	color: #979797;
+	margin: 0 5px;
+}
+
+ul.nav a:hover{
+	color: #00ADEE;
 }
