@@ -2,8 +2,8 @@
 layout: post
 title: CBBFactura, cumpliendo con las disposiciones del SAT 2012
 ---
-Para beneficio de todos nuestros clientes **CBBFactura** ahora cumple con las disposiciones fiscales del **SAT 2012** para la facturación por **Código de Barras Bidimensional**.
+<p>Para beneficio de todos nuestros clientes <strong>CBBFactura</strong> ahora cumple con las disposiciones fiscales del <strong>SAT 2012</strong> para la facturación por <strong>Código de Barras Bidimensional</strong>.</p>
 
-Estas actualizaciones no tienen costo adicional para nuestros clientes, ni se refleja en un aumento en los precios.
+<p>Estas actualizaciones no tienen costo adicional para nuestros clientes, ni se refleja en un aumento en los precios.</p>
 
-Gracias por su preferencia.
+<p>Gracias por su preferencia.</p>

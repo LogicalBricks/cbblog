@@ -2,3 +2,5 @@
 exclude:
 - Rakefile
 - README.md
+# Add this line to add pagination
+paginate: 3
