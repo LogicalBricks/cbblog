@@ -1,9 +1,26 @@
 require "rubygems"
 require "rake"
 
+task :default => :server
+
+desc "Build site with jekyll"
+task :build do
+  jekyll
+end
+
+desc "Start server with --auto"
+task :server do
+  jekyll('--server --auto')
+end
+
+desc "Remove all the build files."
+task :clean do
+  sh 'rm -rf _site'
+end
+
 desc "Deploy to codeography.com"
 task :deploy do
-  sh "jekyll"
+  jekyll
   sh "scp -r _site/* root@cbbfactura.com:/var/www/blog/"
 end
 
@@ -28,4 +45,9 @@ EOS
     system ("vim #{post_file}")
     system ("git add #{post_file}")
   end
+end
+
+def jekyll(opts = '')
+  Rake::Task['clean'].execute
+  sh 'jekyll ' + opts
 end
