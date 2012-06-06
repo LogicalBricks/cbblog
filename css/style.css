@@ -27,12 +27,20 @@ div.logo{
 	margin-bottom: 80px;
 }
 
-h2.title{
+h2.title, h2.title a{
 	color: #00ADEE;
 	font-size: 28px;
 	font-width: 500;
 	line-height: 33px;
 	margin: 0;
+}
+
+h2.title a{
+	text-decoration: none;
+}
+
+h2.title a:hover{
+	color: #009AD5;
 }
 
 .byline{
