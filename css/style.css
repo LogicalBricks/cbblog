@@ -193,8 +193,10 @@ ul.pagination li{
 ul.pagination a{
 	color: #8C8C8C;
 	padding: 10px;
+	text-decoration: none;
 }
 
 ul.pagination a:hover{
 	color: black;
+	text-decoration: underline;
 }
