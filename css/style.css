@@ -32,24 +32,27 @@ h2.title{
 	font-size: 28px;
 	font-width: 500;
 	line-height: 33px;
+	margin: 0;
 }
 
 .byline{
-	font: 8px Verdana, sans-serif;
-	color: #61CAFF;
-	background-color: #0D0E0F;
+	font: 10px Verdana, sans-serif;
+	color: #E3D444;
 	display: inline;
-	padding: 8px;
+	padding: 8px 8px 8px 0;
 }
 
 #sidebar, .entry{
 	margin: 20px 0 0 0;
 }
 
+#sidebar, .entry{
+	box-shadow: 0px 4px 10px 2px #979797; /* Opera 10.5, IE 9.0 */
+}
+
 .entry{
 	background-color: #FFF;
 	padding: 10px 15px;
-	box-shadow: 0px 4px 10px 2px #979797; /* Opera 10.5, IE 9.0 */
 	border: 1px dashed #c4c4c4;
 	font-size: 15px;
 	line-height: 24px;
@@ -133,27 +136,65 @@ h2.title{
 
 ul.nav{
 	font: 20px Verdana, "Times New Roman", serif;
-	margin-top: 40px;
-	float: right;
+	margin-top: 20px;
+	height: 30px;
 }
 
 ul.nav li{
 	display: inline;
 	margin: 0;
+	padding: 0;
 }
 
 ul.nav a{
 	text-decoration: none;
-	color: #979797;
-	margin: 0 5px;
-	padding: 10px 10px 0 10px;
+	color: #909090;
+	margin: 0;
+	padding: 4px 10px;
+	border-bottom: 4px solid #E1E1E1;
 }
 
 ul.nav a:hover{
-	color: #fff;
-	background-color: #696969;
+	color: #00ADEE;
+	border-bottom: 4px solid #E3D444;
 }
 
 h1, h2, h3, h4, h5, h6{
 	color: #E3D444;
+}
+
+blockquote {
+  font: 14px/22px normal helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+  color: #BDBDBD;
+}
+
+#pag_cont{
+	background-color: #eee;
+	height: 30px;
+}
+
+ul.pagination{
+	list-style-type: none;
+}
+
+ul.pagination li{
+	display: inline;
+	margin: 0;
+	padding: 5px;
+	background-color: #eee;
+	border-right: 1px solid #fff;
+}
+
+ul.pagination a{
+	color: #8C8C8C;
+	padding: 10px;
+}
+
+ul.pagination a:hover{
+	color: black;
 }

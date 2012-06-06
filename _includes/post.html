@@ -1,7 +1,7 @@
 <div class="">
   <div class="entry">
     <h2 class="title">{{ post.title }}</h2>
-    <div class="byline">{{ post.date | date:"%B %d, %Y" }}</div>
+    <div class="byline">Escrito el {{ post.date | date:"%d/%m/%Y" }}</div>
 
     <div class="body">
       {% if hide_extended %}

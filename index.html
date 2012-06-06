@@ -7,6 +7,61 @@ site:
 ---
 {% assign hide_extended = true %}
 
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:3 %}
 {% include post.html %}
 {% endfor %}
+
+<!-- This only works with html, this doesn't work with markdown files -->
+{% for post in paginator.posts %}
+{% include post.html %}
+{% endfor %}
+
+<div id="pag_cont">
+	<ul class="pagination">
+		{% if paginator.previous_page %}
+		<li>
+			{% if paginator.previous_page == 1 %}
+			<a href="/">&laquo;</a>
+			{% else %}
+			<a href="/page{{paginator.previous_page}}">&laquo;</a>
+			{% endif %}
+		</li>
+		{% else %}
+		<li class="unavailable">
+			<a href="">&laquo;</a>
+		</li>
+		{% endif %}
+
+		<li>
+			{% if paginator.page == 1 %}
+			<a href="">1</a>
+			{% else %}
+			<a href="/">1</a>
+			{% endif %}
+		</li>
+
+		{% for count in (2..paginator.total_pages) %}
+
+		{% if count == paginator.page %}
+		<li class="current">
+			<a href=""">{{count}}</a>
+		</li>
+		{% else %}
+		<li>
+			<a href="/page{{count}}">{{count}}</a>
+		</li>
+		{% endif %}
+
+		{% endfor %}
+
+		{% if paginator.next_page %}
+		<li>
+			<a href="/page{{paginator.next_page}}">&raquo;</a>
+		</li>
+		{% else %}
+		<li class="unavailable">
+			<a href="">&raquo;</a>
+		</li>
+		{% endif %}
+	</ul>
+</div>
