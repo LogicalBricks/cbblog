@@ -5,7 +5,7 @@
 
     <div class="body">
       {% if hide_extended %}
-		{% if post.excerpt %}
+		{% if post.readmore %}
 			{{ post.content | truncate }}
 		    <a href="{{ post.url }}/#more" class="more-link"><span class="readmore">Leer más»</span></a>
 		{% else %}
