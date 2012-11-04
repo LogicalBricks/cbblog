@@ -1,0 +1,24 @@
+!!! 5
+%html
+  %head
+    %meta{ charset: "utf-8" }
+    %meta{ name:"author", content: "LogicalBricks Solutions" }
+    %meta{ name: "description", content: "#{page.description}" }
+    %title= CBBlog | page.title
+    - if page.keywords
+      %meta{ name: "keywords", content: "#{ page.keywords }" }
+
+    = include stylesheets.html
+    = include scripts.html
+
+  %body
+
+    = include header.html
+
+      .container_12#container
+        .grid_12
+          #main
+            = content
+      .clear
+
+    = include footer.html

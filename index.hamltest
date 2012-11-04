@@ -1,0 +1,46 @@
+---
+layout: default
+title: Blog de CBBFactura, tu factura fácil.
+site: 
+  author: LogicalBricks
+  host: http://cbbfactura.com/blog
+---
+
+- assign hide_extended = true
+
+- for post in paginator.posts
+  - include post.html
+
+#pag_cont
+  %ul.pagination
+    - if paginator.previous_page
+      %li
+        - if paginator.previous_page == 1
+          %a{ href: "/" } &laquo;
+        - else
+          %a{ href: "/page#{paginator.previous_page}"} &laquo;
+    - else
+      %li.unavailable
+        %a{ href: ""} 
+          &laquo;
+      %li
+        - if paginator.page == 1
+          %a{ href: "" } 1
+        - else
+          %a{ href: "/" } 1
+
+    - for count in (2..paginator.total_pages)
+      - if count == paginator.page
+        %li.current
+          %a{  href: ""} 
+            =count
+      - else
+        %li
+          %a{ href: "/page#{count}"}=count
+
+    - if paginator.next_page
+      %li
+        %a{ href: "/page#{paginator.next_page}"} &raquo;
+    - else
+      %li.unavailable
+        %a{ href:""} &raquo;
